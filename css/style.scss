@@ -2,10 +2,16 @@
     box-sizing: border-box;
     margin: 0;
 }
+.fix1{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 header {
     margin-top: 10px;
-    width: 100%;
+    width: 62.4365%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,6 +70,12 @@ header {
         justify-content: center;
     }
 }
+.fix2{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .container {
     margin-top: 50px;
@@ -74,20 +86,20 @@ header {
         background-position: center;
     }
     .contt {
-        width: 100%;
+        width: 62.4365%;
         height: 600px;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 100px; 
         display: flex;
         .image {
-            width: 50%;
+            width: 100vw;
             height: 600px;
             background: url(../img/photo.jfif);
             background-repeat: no-repeat;
             background-position: center;
         }
         .text {
-            width: 50%;
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: start;
@@ -128,6 +140,13 @@ header {
         justify-content: center;
         .text {
             margin-top: 40px;
+            width: 80%;
+            h2 {
+                margin: 0 auto;
+            }
+            p {
+                text-align: center;
+            }
             .icon { 
                 margin-top: 40px;
                 .happy {
@@ -146,7 +165,25 @@ header {
     }
 }
 
+.fix3{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+       
+    }
+    .head{
+        width: 62.4365%;
+    }
+  
+}
 .satisfaction {
+    .fix3{
+        p{
+            width: 62.4365%;      //lore fix
+        }
+    }
     width: 100%;
     height: 450px;
     background: #ebf1f6;
@@ -154,6 +191,7 @@ header {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     div { 
         margin-top: 10px;
         width: 100%;
@@ -168,6 +206,7 @@ header {
         }
     }
     p {
+        width: 80%;
         text-align: center;
         color: #8c9499;
         font-family: 'Poppins', sans-serif;
@@ -192,39 +231,41 @@ header {
 }
 @media (max-width:768px) {
     .satisfaction {
-        margin-top: 105vh;
-    }
-}
-@media (max-width:572px) {
-    .satisfaction {
-        margin-top: 120vh;
-    }
-}
-@media (max-width:454px) {
-    .satisfaction {
-        margin-top: 185vh;
-        height: 550px;
-    }
-}
-@media (max-width:354px) {
-    .satisfaction {
-        margin-top: 210vh;
-        height: 600px;
-    }
-}
-@media (max-width:310px) {
-    .satisfaction {
-        margin-top: 220vh;
-        height: 600px;
+        margin-top: 405px;
     }
 }
 
+@media (max-width:454px) and (min-width:437px){
+    .satisfaction {
+        margin-top: 455px;
+        height: 580px;
+    }
+}
+@media (max-width:437px) {
+    .satisfaction {
+        margin-top: 550px;
+        height: 610px;
+    }
+}
+@media (max-width:365px) {
+    .satisfaction {
+        margin-top: 650px;
+    }
+}
+
+.fix4{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mis-vis {
-    width: 100%;
+    width: 62.4365%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-left: 50px;
+    
     .mision {
         img {
             position: absolute;
@@ -274,11 +315,11 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         .mision {
-            width: 60%;
+            width: 100%;
         }
         .vision {
             margin-top: 40px;
-            width: 60%;
+            width: 100%;
         }
     }
 }
@@ -306,7 +347,7 @@ header {
     width: 100%;
     div {
         width: 100%;
-        height: 0.9px;
+        height: 1px;
         background: #dee6ec;
         margin-top: 100px;
         margin-bottom: 100px;
@@ -329,6 +370,15 @@ header {
         height: 331px;
         margin: 10px;
         background: linear-gradient(to bottom , #9b9fa0, #304046);
+    }
+}
+@media (max-width: 999px) {
+    .col {
+        display: flex;
+        flex-wrap: wrap;
+        .box {
+            margin: 50px;
+        }
     }
 }
 
